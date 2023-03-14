@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Avinashes</h1>
+
+<div id="avinashes">
+  <% @avinashes.each do |avinash| %>
+    <%= render avinash %>
+    <p>
+      <%= link_to "Show this avinash", avinash %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New avinash", new_avinash_path %>

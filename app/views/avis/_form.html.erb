@@ -1,0 +1,27 @@
+<%= form_with(model: avi) do |form| %>
+  <% if avi.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(avi.errors.count, "error") %> prohibited this avi from being saved:</h2>
+
+      <ul>
+        <% avi.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :age, style: "display: block" %>
+    <%= form.text_field :age %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

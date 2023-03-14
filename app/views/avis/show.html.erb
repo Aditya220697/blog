@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @avi %>
+
+<div>
+  <%= link_to "Edit this avi", edit_avi_path(@avi) %> |
+  <%= link_to "Back to avis", avis_path %>
+
+  <%= button_to "Destroy this avi", @avi, method: :delete %>
+</div>

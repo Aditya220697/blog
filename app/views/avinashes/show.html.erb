@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @avinash %>
+
+<div>
+  <%= link_to "Edit this avinash", edit_avinash_path(@avinash) %> |
+  <%= link_to "Back to avinashes", avinashes_path %>
+
+  <%= button_to "Destroy this avinash", @avinash, method: :delete %>
+</div>

@@ -1,0 +1,2 @@
+class Avinash < ApplicationRecord
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Avis</h1>
+
+<div id="avis">
+  <% @avis.each do |avi| %>
+    <%= render avi %>
+    <p>
+      <%= link_to "Show this avi", avi %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New avi", new_avi_path %>

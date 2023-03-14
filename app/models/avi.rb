@@ -1,0 +1,2 @@
+class Avi < ApplicationRecord
+end
